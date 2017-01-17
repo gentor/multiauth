@@ -6,6 +6,8 @@
 - **Laravel**: 4.2
 - **Author**: Ollie Read 
 - **Author Homepage**: http://ollieread.com
+- **Author**: Evgeni Nurkov 
+- **Author Homepage**: http://nurkov.com
 
 This package is not a replacement for Laravel's default Auth library, but instead something
 that sits between your code and the library.
@@ -20,14 +22,14 @@ in as a user, a master account and an admin, without conflicts!
 
 ## Custom Auth Drivers ##
 
-At this current moment in time, custom Auth drivers written for the base Auth class will not work. I'm currently looking into this particular issue but for the meantime, you can work around this by changing your closure to return an instance of `Ollieread\Multiauth\Guard` instead of the default.
+This version should work with custom drivers
 
 ## Installation ##
 
 Firstly you want to include this package in your composer.json file.
 
     "require": {
-    		"ollieread/multiauth": "dev-master"
+    		"gentor/multiauth": "dev-master"
     }
     
 Now you'll want to update or install via composer.
@@ -36,7 +38,7 @@ Now you'll want to update or install via composer.
 
 Next you open up app/config/app.php and replace the AuthServiceProvider with
 
-    "Ollieread\Multiauth\MultiauthServiceProvider"
+    "Gentor\Multiauth\MultiauthServiceProvider"
 
 **NOTE** It is very important that you replace the default service providers. If you do not wish to use Reminders, then remove the original Reminder server provider as it will cause errors.
 
@@ -94,7 +96,7 @@ Now remove the first three options and replace as follows:
 If you wish to use reminders, you will need to replace ReminderServiceProvider in you 
 app/config/app.php file with the following.
 
-	Ollieread\Multiauth\Reminders\ReminderServiceProvider
+	Gentor\Multiauth\Reminders\ReminderServiceProvider
 
 To generate the reminders table you will need to run the following command.
 

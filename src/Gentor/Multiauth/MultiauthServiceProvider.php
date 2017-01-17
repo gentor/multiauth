@@ -1,7 +1,7 @@
-<?php namespace Ollieread\Multiauth;
+<?php namespace Gentor\Multiauth;
 
 use Illuminate\Support\ServiceProvider;
-use Ollieread\Multiauth\Console\RemindersTableCommand;
+use Gentor\Multiauth\Console\RemindersTableCommand;
 
 class MultiauthServiceProvider extends ServiceProvider
 {

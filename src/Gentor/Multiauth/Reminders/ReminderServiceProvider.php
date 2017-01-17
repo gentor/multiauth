@@ -1,9 +1,9 @@
-<?php namespace Ollieread\Multiauth\Reminders;
+<?php namespace Gentor\Multiauth\Reminders;
 
 use Illuminate\Support\ServiceProvider;
-use Ollieread\Multiauth\Console\RemindersTableCommand;
-use Ollieread\Multiauth\Console\ClearRemindersCommand;
-use Ollieread\Multiauth\Reminders\DatabaseReminderRepository as DbRepository;
+use Gentor\Multiauth\Console\RemindersTableCommand;
+use Gentor\Multiauth\Console\ClearRemindersCommand;
+use Gentor\Multiauth\Reminders\DatabaseReminderRepository as DbRepository;
 
 class ReminderServiceProvider extends ServiceProvider {
 

@@ -1,4 +1,4 @@
-<?php namespace Ollieread\Multiauth\Reminders;
+<?php namespace Gentor\Multiauth\Reminders;
 
 use Illuminate\Auth\Reminders\RemindableInterface;
 

@@ -1,4 +1,4 @@
-<?php namespace Ollieread\Multiauth;
+<?php namespace Gentor\Multiauth;
 
 use Illuminate\Auth\Guard as OriginalGuard;
 use Illuminate\Auth\UserProviderInterface;

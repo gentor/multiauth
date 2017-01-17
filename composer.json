@@ -7,6 +7,10 @@
         {
             "name": "Ollie Read",
             "email": "labs@ollieread.com"
+        },
+        {
+            "name": "Evgeni Nurkov",
+            "email": "evgeni@nurkov.com"
         }
     ],
     "require": {
@@ -19,7 +23,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Ollieread\\Multiauth": "src/"
+            "Gentor\\Multiauth": "src/"
         }
     }
 }
